@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-itrerate</title>
+</head>
+<body>
+    <script>
+      let size=parseInt(prompt("Enter the size of the array"));
+            let a=[];
+            for(i=0;i<size;i++){
+            a[i]=parseFloat(prompt("enter the value for "+(i+1) ));
+            }
+
+            document.write(`Given array = [ ${a} ] <br><br>`);
+
+            let iterate=(a)=>{
+            
+            for(res of a){
+                document.write(`${res} <br>`)
+            }
+            }
+
+            let divide=(num1,ans)=>{
+            ans(num1);
+            }
+
+            divide(a,iterate)
+    </script>
+</body>
+</html>
